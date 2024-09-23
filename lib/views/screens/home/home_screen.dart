@@ -21,7 +21,11 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: NodeData.nodeData.isEmpty
-          ? const Center(child: TextWidget(tittle: "Emty Notes",tSize: 22,))
+          ? const Center(
+              child: TextWidget(
+              tittle: "Emty Notes",
+              tSize: 22,
+            ))
           : ListView.builder(
               itemCount: NodeData.nodeData.length,
               itemBuilder: (context, index) {
