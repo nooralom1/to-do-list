@@ -1,4 +1,3 @@
-
 class NodeModel {
   String tittle;
   String description;
